@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario1</title>
+</head>
+<body>
+
+    <!-- formulario: permite a los usuarios ingresar datos para luego ser enviados al servidor (backend)
+    para su procesamiento --> 
+    <!-- Method es para especificar el metodo HTTP para enviar los datos (GET o POST) -->
+    <!-- Get= quermos enviar los datos a través de una URL 
+    POST= los datos se envían a través del cuerpo de la petición HTTP, lo cual hace que los datos estén cifrados,
+    lo que es importante cuando trabajamos con datos sensibles -->
+    <!-- <form action="url" method="get/post"> -->
+    <h1>Formulario básico</h1>
+    <!-- action es para especificar la URL a las que se envian los datos -->
+    <!-- method post= es el que se suele poner -->
+    <form action="011.etiqutas_semanticas.html" method=post>
+        <!-- div= es un contenedor o división en HTML. Proporciona estructura y diseño a la pag. web -->
+        <div>
+            <!-- label e input son etiquetas.
+            input no tiene cierre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+            <label for="telefono">Telefono movil</label>
+            <input type="text" name="telefono" id="telefono">
+        </div>
+    </form>
+
+</body>
+</html>
