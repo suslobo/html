@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con botones</title>
+</head>
+<body>
+    <h1>Tabla con botones</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Susana</td>
+            <td>
+                <!-- botón interactivo -->
+                <button>Editar</button>
+                <button>Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Marta</td>
+            <td>
+                <button onclick="alert('hola mundo')">Mostrar alerta</button>
+                <!-- onclick ejecuta una función de JS
+                console.log= herramienta de depuración para ver mensajes durante el desarrollo -->
+                <button onclick="console.log('boton pulsado')">Console log</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
