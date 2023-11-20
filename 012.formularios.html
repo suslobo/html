@@ -17,8 +17,7 @@
     <h1>Formulario básico</h1>
     <!-- action es para especificar la URL a las que se envian los datos -->
     <!-- method post= es el que se suele poner -->
-    <form action="011.etiqutas_semanticas.html" method=post>
-        <!-- div= es un contenedor o división en HTML. Proporciona estructura y diseño a la pag. web -->
+    <form action="011.etiqutas_semanticas.html" method=post        <!-- div= es un contenedor o división en HTML. Proporciona estructura y diseño a la pag. web -->
         <div>
             <!-- label e input son etiquetas.
             input no tiene cierre -->
@@ -29,7 +28,78 @@
             <label for="telefono">Telefono movil</label>
             <input type="text" name="telefono" id="telefono">
         </div>
-    </form>
+        <div>
+            <label for="NIF">NIF</label>
+            <input type="text" name="NIF" id="NIF" placeholder="8585747849">
+            </div>
+        <div>
+            <label for="email">Correo electronico:</label>
+            <input type="email" name="email" id="email" placeholder="usuario1@hotmail.es">
+        </div>
+        <div>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena">
+        </div>
+        <div>
+            <label for="salary">Salario:</label>
+            <input type="number" name="salary" id="salary" step="200">
+        </div>
+        <div>
+            <label for="weightn">Peso (kg)</label>
+            <input type="number" name="weightn" id="weightn" step="0.50">
+        </div>
+        <div>
+            <label for="height">Altura (cm)</label>
+            <input type="number" name="height" id="height" step="0.50" min="50" max="240"> cm
+        </div>
+        <div>
+            <label for="bio">Biografía:</label>
+            <textarea name="bio" id="bio" rows="10" cols="50" minlength="10" maxlength="1000"></textarea>
+        </div>
+        <div>
+            <label>Género</label>
+        </div>
+        <div>
+            <input type="radio" id="male" name="genero" value="male"> 
+            <label for="male">Masculino</label>
+        </div>
+        <div>
+            <input type="radio" id="female" name="genero" value="female"> 
+            <label for="female">Femenino</label>
+        </div>
+        <div>
+            <input type="radio" id="other" name="genero" value="other"> 
+            <label for="male">Otro</label>
+        </div>
+        <div>
+            <label for="state">Comunidad Autónoma:</label>
+            <select name="state" id="state">
+                <option value="m">Madrid</option>
+                <option value="c">Cataluña</option>
+                <option value="a">Andalucía</option>
+                <option value="g">Galicia</option>
+            </select>
+        </div>
+        <div>
+            <label for="comentarios">Comentarios:</label>
+            <textarea name="comentarios" id="comentarios" cols="60" rows="3"></textarea>
+        </div>
+        <div>
+            <label for="birthday">Fecha de nacimiento:</label>
+            <input type="date" id="birthday" name="birthday" min="2010-01-01" max="2023-12-31">
+        </div>
+        <div>
+            <label for="courseDateTime">Fecha de comienzo del curso de Angular</label>
+            <input type="datetime-local" id="courseDateTime" name="courseDateTime">
+        </div>
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Acepta nuestra política de privacidad</label>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
 
+    </form>
 </body>
 </html>
